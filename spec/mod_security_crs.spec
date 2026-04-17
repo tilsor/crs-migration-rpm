@@ -7,8 +7,6 @@ URL: https://coreruleset.org
 Group: System Environment/Daemons
 
 Source0: https://codeload.github.com/german-gonzalez-ruiz/crs-migration/tar.gz/refs/tags/v%{version}
-Source1: https://raw.githubusercontent.com/german-gonzalez-ruiz/crs-migration-rpm/main/custom-rules/pre_000_migration.conf
-Source2: https://raw.githubusercontent.com/german-gonzalez-ruiz/crs-migration-rpm/main/custom-rules/post_000_migration-correlation.conf
 BuildArch: noarch
 Requires: mod_security >= 2.9.6
 Obsoletes: mod_security_crs-extras < 3.0.0
@@ -18,8 +16,6 @@ This package provides the base rules for mod_security.
 
 %prep
 %setup -q -n crs-migration-%{version}
-
-%build
 
 %install
 
